@@ -87,7 +87,7 @@ function App() {
       if (progress > 100) {
         return;
       }
-      const newX = x + Math.random() * 100000;
+      const newX = x + Math.random() * 25;
       setProgress(getProgress(newX));
       setBuffer(getNextProgress(progress));
       setX(newX);
