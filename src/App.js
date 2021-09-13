@@ -184,7 +184,7 @@ function App() {
               <Grid item xs={12} className={classes.tips}>
                 {tips}
                 <br />
-                请勿关闭浏览器……
+                {progress < 100 && <span>请勿关闭浏览器……</span>}
               </Grid>
             )}
           </Grid>
@@ -201,7 +201,7 @@ function App() {
         <Card className={classes.previewCard}>
           <CardContent>
             {progress >= 100 ? (
-              <img src="assets/sc2.jpg" alt="funny mad pee!" />
+              <img src="sc2.jpg" alt="funny mad pee!" />
             ) : (
               <Box>
                 <CircularProgress />
